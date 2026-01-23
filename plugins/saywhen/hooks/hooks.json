@@ -1,42 +1,44 @@
 {
-  "PermissionRequest": [
-    {
-      "hooks": [
-        {
-          "type": "command",
-          "command": "[ -f ~/CC_MUTE.txt ] || say \"$(pwd | sed 's|^.*/dev/||') blocked\""
-        }
-      ]
-    }
-  ],
-  "Stop": [
-    {
-      "hooks": [
-        {
-          "type": "command",
-          "command": "[ -f ~/CC_MUTE.txt ] || say \"$(pwd | sed 's|^.*/dev/||') complete\""
-        }
-      ]
-    }
-  ],
-  "Notification": [
-    {
-      "matcher": "idle_prompt",
-      "hooks": [
-        {
-          "type": "command",
-          "command": "[ -f ~/CC_MUTE.txt ] || say \"$(pwd | sed 's|^.*/dev/||') idle\""
-        }
-      ]
-    },
-    {
-      "matcher": "elicitation_dialog",
-      "hooks": [
-        {
-          "type": "command",
-          "command": "[ -f ~/CC_MUTE.txt ] || say \"$(pwd | sed 's|^.*/dev/||') user input needed\""
-        }
-      ]
-    }
-  ]
+  "hooks": {
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f ~/CC_MUTE.txt ] || say \"$(pwd | sed 's|^.*/dev/||') blocked\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f ~/CC_MUTE.txt ] || say \"$(pwd | sed 's|^.*/dev/||') complete\""
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "idle_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f ~/CC_MUTE.txt ] || say \"$(pwd | sed 's|^.*/dev/||') idle\""
+          }
+        ]
+      },
+      {
+        "matcher": "elicitation_dialog",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f ~/CC_MUTE.txt ] || say \"$(pwd | sed 's|^.*/dev/||') user input needed\""
+          }
+        ]
+      }
+    ]
+  }
 }
