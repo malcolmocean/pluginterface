@@ -3,4 +3,14 @@ description: Unmute saywhen voice notifications
 disable-model-invocation: true
 ---
 
-Invoke the saywhen:unmute skill and follow it exactly as presented to you
+# Unmute SayWhen Notifications
+
+Unmute voice notifications by removing the mute file.
+
+Run this command:
+
+```bash
+rm -f ~/.config/pluginterface/saywhen/mute
+```
+
+Then confirm to the user that notifications are unmuted. They can mute again with `/saywhen:mute`.

@@ -38,7 +38,7 @@ claude --plugin-dir /path/to/saywhen
 After installing, configure your project folder prefix:
 
 ```
-/saywhen-setup
+/saywhen:setup
 ```
 
 This tells SayWhen how to extract project names from paths. For example:
@@ -54,9 +54,9 @@ bash /path/to/saywhen/setup.sh
 
 ## Commands
 
-- `/saywhen-setup` - Configure the project folder prefix
-- `/saywhen-mute` - Mute voice notifications
-- `/saywhen-unmute` - Unmute voice notifications
+- `/saywhen:setup` - Configure the project folder prefix
+- `/saywhen:mute` - Mute voice notifications
+- `/saywhen:unmute` - Unmute voice notifications
 
 ## Configuration
 
