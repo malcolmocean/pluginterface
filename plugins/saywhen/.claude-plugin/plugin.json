@@ -3,8 +3,6 @@
   "description": "Voice notifications for Claude Code - announces when tasks complete, need input, or are blocked",
   "version": "1.0.0",
   "author": {
-    "name": "Malcolm"
-  },
-  "keywords": ["voice", "notifications", "accessibility", "macos", "say"],
-  "hooks": "hooks/hooks.json"
+    "name": "Malcolm Ocean"
+  }
 }
