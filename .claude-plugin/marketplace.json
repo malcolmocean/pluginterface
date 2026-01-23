@@ -1,11 +1,15 @@
 {
   "name": "pluginterface",
   "description": "Malcolm's Claude Code plugins",
+  "owner": {
+    "name": "Malcolm Ocean"
+  },
   "plugins": [
     {
       "name": "saywhen",
       "description": "Voice notifications for Claude Code - announces when tasks complete, need input, or are blocked",
-      "path": "plugins/saywhen"
+      "source": "./plugins/saywhen",
+      "category": "productivity"
     }
   ]
 }
