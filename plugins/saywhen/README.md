@@ -33,29 +33,56 @@ claude --plugin-dir /path/to/saywhen
 /plugin install saywhen
 ```
 
-## Muting
+## Setup
 
-Create `~/CC_MUTE.txt` to mute all notifications:
+After installing, configure your project folder prefix:
+
+```
+/saywhen-setup
+```
+
+This tells SayWhen how to extract project names from paths. For example:
+- If your projects are in `~/dev/`, enter `dev`
+- If your projects are in `~/code/`, enter `code`
+- If your projects are directly in your home folder, enter your username
+
+You can also run the setup script directly:
 
 ```bash
-touch ~/CC_MUTE.txt   # mute
-rm ~/CC_MUTE.txt      # unmute
+bash /path/to/saywhen/setup.sh
 ```
+
+## Commands
+
+- `/saywhen-setup` - Configure the project folder prefix
+- `/saywhen-mute` - Mute voice notifications
+- `/saywhen-unmute` - Unmute voice notifications
 
 ## Configuration
 
-The plugin extracts project names from paths by stripping everything up to `/dev/`. For example:
+Configuration is stored in `~/.config/pluginterface/saywhen/`:
+- `prefix` - The folder name used to extract project names from paths
+- `mute` - If this file exists, notifications are muted
+
+### How path extraction works
+
+The plugin strips the path up to your configured prefix. For example, with prefix `dev`:
 - `/Users/you/dev/myproject` announces as "myproject"
 - `/Users/you/dev/projectA/feature-branch` announces as "projectA/feature-branch"
 
-To customize the path pattern, edit `hooks/hooks.json` and change the `sed` command.
+If no prefix is configured, it falls back to using the current directory name.
 
 ## Requirements
 
 - macOS (uses the `say` command)
 - Claude Code
 
-## TODO
+## Testing
 
-- [ ] Support muting specific event types
-- [ ] Add a `/mute` command for easier control
+Run the test suite:
+
+```bash
+cd /path/to/saywhen
+bash test/setup_test.sh
+bash test/hooks_test.sh
+```

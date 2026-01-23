@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "[ -f ~/CC_MUTE.txt ] || say \"$(pwd | sed 's|^.*/dev/||') blocked\""
+            "command": "CFG=~/.config/pluginterface/saywhen; [ -f \"$CFG/mute\" ] || say \"$(p=$(cat \"$CFG/prefix\" 2>/dev/null); [ -n \"$p\" ] && pwd | sed \"s|^.*/$p/||\" || basename \"$(pwd)\") blocked\""
           }
         ]
       }
@@ -15,7 +15,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "[ -f ~/CC_MUTE.txt ] || say \"$(pwd | sed 's|^.*/dev/||') complete\""
+            "command": "CFG=~/.config/pluginterface/saywhen; [ -f \"$CFG/mute\" ] || say \"$(p=$(cat \"$CFG/prefix\" 2>/dev/null); [ -n \"$p\" ] && pwd | sed \"s|^.*/$p/||\" || basename \"$(pwd)\") complete\""
           }
         ]
       }
@@ -26,7 +26,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "[ -f ~/CC_MUTE.txt ] || say \"$(pwd | sed 's|^.*/dev/||') idle\""
+            "command": "CFG=~/.config/pluginterface/saywhen; [ -f \"$CFG/mute\" ] || say \"$(p=$(cat \"$CFG/prefix\" 2>/dev/null); [ -n \"$p\" ] && pwd | sed \"s|^.*/$p/||\" || basename \"$(pwd)\") idle\""
           }
         ]
       },
@@ -35,7 +35,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "[ -f ~/CC_MUTE.txt ] || say \"$(pwd | sed 's|^.*/dev/||') user input needed\""
+            "command": "CFG=~/.config/pluginterface/saywhen; [ -f \"$CFG/mute\" ] || say \"$(p=$(cat \"$CFG/prefix\" 2>/dev/null); [ -n \"$p\" ] && pwd | sed \"s|^.*/$p/||\" || basename \"$(pwd)\") user input needed\""
           }
         ]
       }
