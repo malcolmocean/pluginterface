@@ -1,0 +1,9 @@
+[project]
+name = "throw-down-the-keys"
+version = "0.1.0"
+description = "Borrow auth state from a one-time browser login; discover the SPA's silent-refresh endpoint and produce credentials + an implementation guide."
+requires-python = ">=3.12"
+dependencies = [
+    "playwright>=1.48.0",
+    "httpx>=0.27.0",
+]

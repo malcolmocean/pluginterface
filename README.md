@@ -41,3 +41,14 @@ edits (cuts, mutes, ducks, fades, polish).
 ```bash
 /plugin install clapboard
 ```
+
+### throw-down-the-keys
+
+Borrow auth state from a one-time browser login so an unattended CLI or
+remote agent can stay logged in to a web app indefinitely. Drives Playwright
+to find the SPA's silent-refresh endpoint, then writes bootstrap credentials
+plus a language-agnostic implementation guide.
+
+```bash
+/plugin install throw-down-the-keys
+```

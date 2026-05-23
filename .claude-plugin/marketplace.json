@@ -22,6 +22,12 @@
       "description": "Sync, trim, and master multi-track interview audio/video without an NLE — cross-correlation sync + mlx-whisper transcription + ffmpeg edits (cuts, mutes, ducks, fades, polish)",
       "source": "./plugins/clapboard",
       "category": "media"
+    },
+    {
+      "name": "throw-down-the-keys",
+      "description": "Borrow auth state from a one-time browser login so an unattended CLI or remote agent can stay logged in to a web app indefinitely. Drives Playwright to find the SPA's silent-refresh endpoint, then writes bootstrap credentials and a language-agnostic implementation guide.",
+      "source": "./plugins/throw-down-the-keys",
+      "category": "developer"
     }
   ]
 }
