@@ -10,6 +10,12 @@
       "description": "Voice notifications for Claude Code - announces when tasks complete, need input, or are blocked",
       "source": "./plugins/saywhen",
       "category": "productivity"
+    },
+    {
+      "name": "og-image-drafting",
+      "description": "Brainstorm illustration ideas for a blog post and generate side-by-side variants (concepts × art styles) via the OpenAI image API, with an HTML preview gallery.",
+      "source": "./plugins/og-image-drafting",
+      "category": "creative"
     }
   ]
 }

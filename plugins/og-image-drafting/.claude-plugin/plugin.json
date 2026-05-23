@@ -1,0 +1,8 @@
+{
+  "name": "og-image-drafting",
+  "description": "Brainstorm illustration ideas for a blog post and generate side-by-side variants (multiple concepts × art styles) via the OpenAI image API, with an HTML preview gallery.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Malcolm Ocean"
+  }
+}

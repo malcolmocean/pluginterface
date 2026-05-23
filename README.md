@@ -23,3 +23,11 @@ Voice notifications using macOS text-to-speech. Announces when:
 ```bash
 /plugin install saywhen
 ```
+
+### og-image-drafting
+
+Brainstorm illustration concepts for a blog post, then generate side-by-side variants (concepts × art styles) via the OpenAI image API. Builds an HTML preview gallery so you can compare.
+
+```bash
+/plugin install og-image-drafting
+```
