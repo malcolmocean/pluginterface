@@ -16,6 +16,12 @@
       "description": "Brainstorm illustration ideas for a blog post and generate side-by-side variants (concepts × art styles) via the OpenAI image API, with an HTML preview gallery.",
       "source": "./plugins/og-image-drafting",
       "category": "creative"
+    },
+    {
+      "name": "clapboard",
+      "description": "Sync, trim, and master multi-track interview audio/video without an NLE — cross-correlation sync + mlx-whisper transcription + ffmpeg edits (cuts, mutes, ducks, fades, polish)",
+      "source": "./plugins/clapboard",
+      "category": "media"
     }
   ]
 }

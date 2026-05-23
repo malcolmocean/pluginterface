@@ -1,0 +1,10 @@
+[project]
+name = "clapboard"
+version = "0.1.0"
+description = "Sync, trim, and master multi-track interview audio/video"
+requires-python = ">=3.12"
+dependencies = [
+    "mlx-whisper>=0.4.3",
+    "numpy>=2.4.4",
+    "scipy>=1.17.1",
+]

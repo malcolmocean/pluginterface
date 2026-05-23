@@ -31,3 +31,13 @@ Brainstorm illustration concepts for a blog post, then generate side-by-side var
 ```bash
 /plugin install og-image-drafting
 ```
+
+### clapboard
+
+Sync, trim, and master multi-track interview audio/video without an NLE.
+Cross-correlation sync + mlx-whisper transcription of head/tail + ffmpeg
+edits (cuts, mutes, ducks, fades, polish).
+
+```bash
+/plugin install clapboard
+```

@@ -1,0 +1,8 @@
+{
+  "name": "clapboard",
+  "description": "Sync, trim, and master multi-track interview audio/video without an NLE — cross-correlation sync + mlx-whisper transcription + ffmpeg edits (cuts, mutes, ducks, fades, polish)",
+  "version": "0.1.0",
+  "author": {
+    "name": "Malcolm Ocean"
+  }
+}
